@@ -1,0 +1,115 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  color: #3b4043;
+  background-color:#f1ece2;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #3b4043;
+}
+
+/* ヘッダー */
+
+.header {
+  /* background-color: #f1f8fe; */
+  margin-bottom: 48px;
+  padding: 20px 0;
+
+}
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 400px;
+  height: 150px;
+  margin-left: 230px;
+  margin-top: 13px
+}
+
+.nav__right {
+  margin: 30px;
+
+}
+
+.nav__btn1,
+.nav__btn2 {
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 1.5em;
+  color: #7a540e;
+  text-decoration: none;
+  user-select: none;
+  border: 5px #f2b94e solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+
+.nav__btn1 {
+  margin-bottom: 5px;
+}
+
+/* メイン */
+
+.greeting{
+  margin-bottom: 20px;
+}
+.greeting__link{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 161px);
+}
+
+
+/* フッター */
+
+.footer {
+  background-color:#7a540e;
+  padding: 10px 0;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}

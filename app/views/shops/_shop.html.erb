@@ -1,7 +1,7 @@
 <div class="card">
-  <%= link_to image_tag(shop.image, class: :card__img ), root_path%>
+  <%= link_to image_tag(shop.image, class: :card__img ), shop_path(shop.id)%>
   <div class="card__body">
-    <%= link_to shop.shop_name, root_path, class: :card__title%>
+    <%= link_to shop.shop_name, shop_path(shop.id), class: :card__title%>
     <p class="card__summary">
       <%= shop.bland %>
     </p>

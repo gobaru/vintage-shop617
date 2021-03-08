@@ -9,5 +9,4 @@ class Shop < ApplicationRecord
     validates :shop_detail
     validates :image
   end
-
 end

@@ -1,5 +1,4 @@
 class ShopsController < ApplicationController
-
   def index
     @shops = Shop.all
   end
@@ -17,10 +16,13 @@ class ShopsController < ApplicationController
     end
   end
 
+  def show
+    @shop = Shop.find(params[:id])
+  end
+
   private
 
   def shop_params
     params.require(:shop).permit(:shop_name, :bland, :shop_detail, :image).merge(user_id: current_user.id)
   end
-
 end

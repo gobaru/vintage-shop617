@@ -21,7 +21,7 @@
           <% if user_signed_in? %>
             <div class="nav__right">
               <%= link_to "ログアウト", destroy_user_session_path, class: :nav__btn3 %>
-              <%= link_to "New Shop", "#", class: :nav__btn4 %>
+              <%= link_to "New Shop", new_shop_path, class: :nav__btn4 %>
             </div>
             </div>
           <% else %>

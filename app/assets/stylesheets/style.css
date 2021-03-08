@@ -123,6 +123,11 @@ a {
 /* フォーム */
 .form__wrapper{
   min-height: calc(100vh - 161px);
+  text-align: center;
+}
+
+.page-heading {
+  color: #7a540e;
 }
 
 .form__text {
@@ -130,7 +135,8 @@ a {
 }
 
 .field{
-  margin: 10px 0;
+  margin: 5px 0;
+  text-align: center;
 }
 
 .actions{

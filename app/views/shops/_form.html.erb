@@ -1,0 +1,41 @@
+<%= form_with model: @shop, local: true do |f|%>
+
+
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">ショップの名称</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_field :shop_name, class:"input-default", maxlength:"40" %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">ブランド名</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :bland, class:"input-default", maxlength:"40" %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">ショップ詳細</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :shop_detail, class:"input-default", maxlength:"40" %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">商品の画像</label>
+      <%= f.label :image, "必須" %><br />
+      <%= f.file_field :image %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+  
+<% end %>

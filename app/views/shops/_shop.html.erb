@@ -5,6 +5,6 @@
     <p class="card__summary">
       <%= shop.bland %>
     </p>
-    <%= link_to "by #{shop.user.nickname}★", root_path, class: :card__user %>
+    <%= link_to "by #{shop.user.nickname}★", "/users/#{shop.user_id}", class: :card__user %>
   </div>
 </div>

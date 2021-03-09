@@ -1,56 +1,54 @@
-<main class="main">
-  <div class="inner">
-    <div class="shop__wrapper">
-      <p class="shop__hedding">
-        <%= @shop.shop_name%>
-      </p>
-      <%= link_to "by #{@shop.user.nickname}★", root_path, class: :shop__user %>
-      <%if user_signed_in? && current_user.id == @shop.user.id %>
-        <div class="shop__manage">
-          <%= link_to "編集する", edit_shop_path(@shop), class: :shop__btn %>
-          <%= link_to "削除する", shop_path(@shop), method: :delete, class: :shop__btn %>
-        </div>
-      <% end %>
-      <div class="shop__image">
-        <%= image_tag @shop.image %>
+<div class="inner">
+  <div class="shop__wrapper">
+    <p class="shop__hedding">
+      <%= @shop.shop_name%>
+    </p>
+    <%= link_to "by #{@shop.user.nickname}★", "/users/#{@shop.user_id}", class: :shop__user %>
+    <%if user_signed_in? && current_user.id == @shop.user.id %>
+      <div class="shop__manage">
+        <%= link_to "編集する", edit_shop_path(@shop), class: :shop__btn %>
+        <%= link_to "削除する", shop_path(@shop), method: :delete, class: :shop__btn %>
       </div>
-      <div class="shop__body">
-        <div class="shop__detail">
-          <p class="detail__title">ブランド</p>
-          <p class="detail__message">
-            <%= @shop.bland %>
-          </p>
-        </div>
-        <div class="shop__detail">
-          <p class="detail__title">ショップの詳細</p>
-          <p class="detail__message">
-            <%= @shop.shop_detail %>
-          </p>
-        </div>
-      </div>  
-      <div class="shop_comments">
-        <% if user_signed_in? %>
-          <%= form_with(model: [@shop, @comment], local: true) do |f| %>
-            <div class="field">
-              <%= f.label :text, "コメント" %><br />
-              <div class="comment_field">
-                <%= f.text_field :text, :size=>"70" %>
-              </div>
+    <% end %>
+    <div class="shop__image">
+      <%= image_tag @shop.image %>
+    </div>
+    <div class="shop__body">
+      <div class="shop__detail">
+        <p class="detail__title">ブランド</p>
+        <p class="detail__message">
+          <%= @shop.bland %>
+        </p>
+      </div>
+      <div class="shop__detail">
+        <p class="detail__title">ショップの詳細</p>
+        <p class="detail__message">
+          <%= @shop.shop_detail %>
+        </p>
+      </div>
+    </div>  
+    <div class="shop_comments">
+      <% if user_signed_in? %>
+        <%= form_with(model: [@shop, @comment], local: true) do |f| %>
+          <div class="field">
+            <%= f.label :text, "コメント" %><br />
+            <div class="comment_field">
+              <%= f.text_field :text, :size=>"70" %>
             </div>
-            <div class="actions">
-              <%= f.submit "送信する", class: :form__btn  %>
-            </div>
-          <% end %>
-          <ul class="comments_list">
-            <% @comments.each do |comment|%>
-              <li class="comments_list">
-                <%= comment.text %>
-                <%= link_to comment.user.nickname, "/users/#{comment.user_id}★", class: :comment_user %>
-              </li>
-            <% end %>
-          </ul>
+          </div>
+          <div class="actions">
+            <%= f.submit "送信する", class: :form__btn  %>
+          </div>
         <% end %>
-      </div>
+        <ul class="comments_list">
+          <% @comments.each do |comment|%>
+            <li class="comments_list">
+              <%= comment.text %>
+              <%= link_to comment.user.nickname, "/users/#{comment.user_id}★", class: :comment_user %>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
     </div>
   </div>
-</main>
+</div>

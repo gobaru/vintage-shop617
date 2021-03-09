@@ -22,6 +22,23 @@ class ShopsController < ApplicationController
     @comments = @shop.comments.includes(:user)
   end
 
+  def edit
+    @shop = Shop.find(params[:id])
+    unless @shop.user.id == current_user.id
+      redirect_to action: :index
+    end
+  end
+
+  def update
+    @shop = Shop.find(params[:id])
+    @shop.update(shop_params)
+    if @shop.update(shop_params)
+      redirect_to @shop
+    else
+      render :edit
+    end
+  end
+
   private
 
   def shop_params

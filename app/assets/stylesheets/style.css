@@ -276,16 +276,48 @@ a {
   text-decoration: none;
 }
 
+/* ユーザー */
 
+.user__wrapper{
+  min-height: calc(100vh - 161px);
+}
+.table{
+  border-collapse: collapse;
+  margin-bottom: 32px;
+  width: 50%;
+  margin-top: 30px;
+}
+.table__col1{
+  text-align: left;
+  font-weight: bold;
+  background: #f1ece2;
+  border-collapse: collapse;
+  border: 3px solid #f2b94e;
+  width: 30%;
+  padding: 8px;
+}
+.table__col2{
+  text-align: left;
+  border: 3px solid #f2b94e;
+  border-collapse: collapse;
+  width: 70%;
+  padding: 16px 8px;
+}
+.user__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* フッター */
 
 .footer {
   background-color:#7a540e;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 .copyright {
   text-align: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 13px;
 }

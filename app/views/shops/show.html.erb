@@ -7,8 +7,8 @@
       <%= link_to "by #{@shop.user.nickname}★", root_path, class: :shop__user %>
       <%if user_signed_in? && current_user.id == @shop.user.id %>
         <div class="shop__manage">
-          <%= link_to "編集する", edit_shop_path(@shop.id), class: :shop__btn %>
-          <%= link_to "削除する", root_path, class: :shop__btn %>
+          <%= link_to "編集する", edit_shop_path(@shop), class: :shop__btn %>
+          <%= link_to "削除する", shop_path(@shop), method: :delete, class: :shop__btn %>
         </div>
       <% end %>
       <div class="shop__image">

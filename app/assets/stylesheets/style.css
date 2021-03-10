@@ -43,6 +43,7 @@ a {
   padding: 20px 0;
 
 }
+
 .inner {
   width: 1024px;
   margin: 0 auto;
@@ -145,6 +146,19 @@ a {
   text-align: right;
   text-decoration: none;
 }
+
+.search_btn {
+  background: #f2b94e;
+  border: 5px #f2b94e solid;
+  color: #fff;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.search_input {
+  font-size: 14px;
+
+}
+
 
 /* フォーム */
 .form__wrapper{

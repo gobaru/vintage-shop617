@@ -11,4 +11,11 @@ class Shop < ApplicationRecord
   belongs_to :user
   has_one_attached :image
   
+  def self.search(search)
+    if search != ""
+      Shop.where('bland LIKE(?)', "%#{search}%")
+    else
+      Shop.all
+    end
+  end
 end

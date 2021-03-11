@@ -1,13 +1,13 @@
 <div class="body">
   <div class='title-contents'>
     <h2 class='service-title'>
-      お気に入りのお店が必ず見つかる
+      お気に入りのお店がきっと見つかる
     </h2>
     <p class='service-explain'>
       誰でも自分のオススメの古着屋を紹介でき、
     </p>
     <p class='service-explain'>
-      あなたの好きなブランドを扱うお店に出会うアプリです★
+      あなたの好きなブランドを扱うお店に出会うためのアプリです★
     </p>
     <div class='store-btn'>
      
@@ -25,6 +25,9 @@
       <%= form.text_field :keyword, placeholder: "ブランド名を入力", class: "search_input" %>
       <%= form.submit "検索", class: "search_btn" %>
     <% end %>
+    <div class="all_item">
+      投稿ショップ一覧
+    </div>
     <div class="card__wrapper">
       <%= render partial: 'shop', collection: @shops %>
     </div>

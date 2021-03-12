@@ -23,6 +23,10 @@ Things you may want to cover:
 
 * ...
 
+
+# アプリ名
+## Vintage Shop
+
 # テーブル設計
 
 ## users テーブル

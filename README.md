@@ -1,28 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
 # アプリ名
 ## Vintage Shop
 
@@ -47,10 +22,11 @@ Things you may want to cover:
 最近ではほぼ全てのショップがオンライン販売を行っているのでどこに住んでいても買い物をする事ができます。
 ですが、オンラインで買い物ができても、どんなにいい商品を取り扱う古着屋やセレクトショップがあっても知らない
 事には買い物をする事ができません。
+
 そこで、海外ブランドや人気ブランドなどに興味がある洋服好きの大学生〜20代の男性の
 「こんなサービスあったらいいな」を叶えるためにVintageShopを作りました。
 良い商品を扱っているのに認知度が低いお店などを知っているユーザーが情報を共有する事で、
-このサイトを使う事で自分の好みの商品/ブランドを扱うお店をピンポイントで探瀬、
+取扱店舗を見つけにくい自分の好みの商品/ブランドを扱うお店をピンポイントで探せて、
 好きな洋服を安く手に入れる事ができるようになります！
 
 # 使用技術

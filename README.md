@@ -37,6 +37,7 @@
 - html, css
 ## データベース
 - MySQL, SequelPro
+- AWS S3
 ## インフラ
 - Heroku
 ## ソース管理

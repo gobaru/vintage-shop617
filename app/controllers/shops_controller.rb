@@ -3,7 +3,7 @@ class ShopsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   def index
-    @shops = Shop.all
+    @shops = Shop.all.order(created_at: :desc)
   end
 
   def new

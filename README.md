@@ -14,7 +14,7 @@
 - Rspec / Rubocopによるテスト機能
 - Basic認証によるセキュリティ機能(紹介制)
 
-![74823688643cb024c0e9c7abfd819ed4](https://user-images.githubusercontent.com/78143375/110903855-6da13780-834b-11eb-87f6-be4862cf8006.jpg)
+https://user-images.githubusercontent.com/78143375/111946902-c200a000-8b1f-11eb-9d18-dbb55a97939d.mp4
 
 <img width="1165" alt="2c053e33520fe8ed8521036c9d74dddd" src="https://user-images.githubusercontent.com/78143375/110903864-709c2800-834b-11eb-9cf8-f67822e69aee.png">
 

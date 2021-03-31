@@ -17,8 +17,7 @@
 
 ![96058ee003d8b3292e9d0c5f132704ad](https://user-images.githubusercontent.com/78143375/111947410-c4172e80-8b20-11eb-938c-aacffd788a5a.jpeg)
 
-![新紹介](https://user-images.githubusercontent.com/78143375/113107237-a774a800-923e-11eb-83d5-d2ec3cee88ec.gif)
-
+![新写真-min](https://user-images.githubusercontent.com/78143375/113108136-9f693800-923f-11eb-8a37-1904998c7498.gif)
 <img width="1165" alt="2c053e33520fe8ed8521036c9d74dddd" src="https://user-images.githubusercontent.com/78143375/110903864-709c2800-834b-11eb-9cf8-f67822e69aee.png">
 
 # 制作理由

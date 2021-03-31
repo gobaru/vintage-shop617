@@ -17,6 +17,9 @@
 
 ![96058ee003d8b3292e9d0c5f132704ad](https://user-images.githubusercontent.com/78143375/111947410-c4172e80-8b20-11eb-938c-aacffd788a5a.jpeg)
 
+![新紹介](https://user-images.githubusercontent.com/78143375/113105213-4e0b7980-923c-11eb-9cea-de04bb8c2d93.gif)
+
+
 <img width="1165" alt="2c053e33520fe8ed8521036c9d74dddd" src="https://user-images.githubusercontent.com/78143375/110903864-709c2800-834b-11eb-9cf8-f67822e69aee.png">
 
 # 制作理由
